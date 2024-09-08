@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Google Map</title>
+    <style>
+        /* Set the height and width of the map to full screen */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100vh;
+            width: 100vw;
+        }
+        /* Optional: Adjust the header position */
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+    </style>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="https://static.vecteezy.com/system/resources/thumbnails/014/618/368/small/dog-and-cat-paws-with-sharp-claws-cute-animal-footprints-png.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Mappage.html">Map</a></li>
+            <li><a href="Contactpagr.html">Contact</a></li>
+        </ul>
+    </header>
+    <h3 style="display: none;">My Google Map</h3> <!-- Hide the title if you want a full-screen map -->
+    <!-- Map container -->
+    <div id="map"></div>
+
+    <!-- Load the JavaScript file -->
+    <script src="java.js"></script>
+
+    <!-- Load Google Maps JavaScript API -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB217LkDpAyatWvQwLk2Dt0BE6BozrOOy0&callback=initMap">
+    </script>
+</body>
+</html>
